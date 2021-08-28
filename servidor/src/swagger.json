@@ -1,0 +1,158 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API de cadastro de usuários",
+    "description": "Essa API tem como objetivo fazer o cadastro de usuários da página JobsNET e armazenar no banco de dados",
+    "contact": {
+      "email": "luizfspereira@outlook.com"
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5000/",
+      "description": "API de teste"
+    }
+  ],
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Cadastro de candidato",
+        "description": "Essa rota será responsável pelo cadastro de novos candidatos, cria um id e recebe: nome, identidade, CPF, data de nascimento, gênero, estado civil, posse de veiculo, habilitação, email, telefone, CEP, endereço, número, complemento, bairro, cidade, cargo pretendido e nível de experiência",
+        "tags": ["Candidates"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Candidate"
+              },
+              "examples": {
+                "candidate": {
+                  "value": {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "nome": "João da Silva",
+                    "identidade": "121231231",
+                    "numeroCpf": "91749435101",
+                    "dataNascimento": "1990-10-04",
+                    "genero": "M",
+                    "estadocivil": "solteiro",
+                    "veiculo": "sim",
+                    "habilitacao": "E",
+                    "email": "joao@example.com",
+                    "telefone": "19988888888",
+                    "telefone2": "",
+                    "numeroCep": "01001000",
+                    "endereco": "Rua de Exemplo",
+                    "numero": "72",
+                    "bairro": "Exemplo",
+                    "cidade": "São Paulo",
+                    "cargoPretendido": "Desenvolvedor Fullstack",
+                    "experiencia": "senior"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Usuário cadastrado com sucesso!",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "$ref": "#/components/schemas/Candidate"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Usuário já cadastrado!"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Candidate": {
+        "type": "object",
+        "properties": {
+          "id":{
+            "type": "string",
+            "format": "uuid"
+          },
+          "nome": {
+            "type": "string",
+            "required": "true"
+          },
+          "identidade": {
+            "type": "number"
+          },
+          "numeroCpf": {
+            "type": "number",
+            "required": "true"
+          },
+          "dataNascimento": {
+            "type": "string",
+            "format": "date",
+            "required": "true"
+          },
+          "genero": {
+            "type": "string"
+          },
+          "estadocivil": {
+            "type": "string"
+          },
+          "veiculo": {
+            "type": "string"
+          },
+          "habilitacao": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "required": "true"
+          },
+          "telefone": {
+            "type": "number",
+            "required": "true"
+          },
+          "telefone2": {
+            "type": "number"
+          },
+          "numeroCep": {
+            "type": "number",
+            "required": "true"
+          },
+          "endereco": {
+            "type": "string",
+            "required": "true"
+          },
+          "numero": {
+            "type": "number",
+            "required": "true"
+          },
+          "complemento": {
+            "type": "string"
+          },
+          "bairro": {
+            "type": "string",
+            "required": "true"
+          },
+          "cidade": {
+            "type": "string",
+            "required": "true"
+          },
+          "cargoPretendido": {
+            "type": "string",
+            "required": "true"
+          },
+          "experiencia": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
