@@ -1,0 +1,157 @@
+.grid {
+  display: grid;
+}
+
+.nome {
+  grid-area: nome;
+}
+
+.identidade {
+  grid-area: identidade;
+}
+
+.cpf {
+  grid-area: cpf;
+}
+
+.data-nascimento {
+  grid-area: data;
+}
+
+.genero {
+  grid-area: genero;
+}
+
+.estado-civil {
+  grid-area: estcivil;
+}
+
+.veiculo {
+  grid-area: veiculo;
+}
+
+.habilitacao {
+  grid-area: habilitacao;
+}
+
+.email {
+  grid-area: email;
+}
+
+.cep {
+  grid-area: cep;
+}
+
+.busca-cep-button {
+  grid-area: button;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  margin-left: -20px;
+  margin-top: 27px;
+  border: 1px solid #c8c8c8;
+  border-radius: 0 5px 5px 0;
+  background-color: #ebe6e6;
+  transition: 300ms;
+}
+
+.busca-cep-button:hover {
+  cursor: pointer;
+  background-color: #c8c8c8;
+}
+
+.endereco {
+  grid-area: endereco;
+}
+
+.numero {
+  grid-area: numero;
+}
+
+.complemento {
+  grid-area: complemento;
+}
+
+.bairro {
+  grid-area: bairro;
+}
+
+.cidade {
+  grid-area: cidade;
+}
+
+.telefone {
+  grid-area: tel;
+}
+
+.telefone2 {
+  grid-area: tel2;
+}
+
+.cargo {
+  grid-area: cargo;
+}
+
+.experiencia {
+  grid-area: exp;
+}
+
+.grid-template-area {
+  grid-template-areas: 
+  "nome nome"
+  "identidade cpf"
+  "data genero"
+  "estcivil ."
+  "veiculo habilitacao"
+  "email email"
+  "tel tel2"
+  "cep button"
+  "endereco endereco"
+  "numero complemento"
+  "bairro cidade"
+  "cargo exp"
+  ;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-control-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+input, select {
+  padding-left: 10px;
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+}
+
+ErrorMessage {
+  font-size: 14px;
+  color: #f83c33;
+}
+
+.submit-button {
+  height: 35px;
+  font-weight: bold;
+  color: #f4f8ff;
+  background-color: #f83c33;
+  border: none;
+  border-radius: 3px;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: #b4312a;
+}
+
+.form__error--style {
+  font-size: 12px;
+  color: #f83c33;
+}
