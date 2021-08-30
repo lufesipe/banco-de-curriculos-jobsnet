@@ -63,7 +63,7 @@ Foram passadas as seguintes informações:
 
 Abaixo há uma screenshot da landing page criada.
 
-![screenshot-web-view](images\screenshot-web-view.png)
+![screenshot-web-view](images/screenshot-web-view.png)
 
 <center>Visualização da página no desktop</center>
 
