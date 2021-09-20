@@ -4,6 +4,7 @@ Este projeto é a minha solução para o desafio final do Programa Start Tech da
 
 O programa consistiu em 5 semanas de treinamento fullstack, com aulas assíncronas e mentorias, além da realização de avaliações e assignments. Para a sua finalização, desenvolvemos o front e o back end de uma aplicação, a qual apresento aqui.
 
+É possível acessar a aplicação clicando [aqui](https://jobsnet-project.netlify.app/).
 
 
 ## Sumário
@@ -98,7 +99,7 @@ Após isto, fui para o desenvolvimento do backend do projeto montando a estrutur
 
 ### Melhorias futuras
 
-- Adicionar uma página de confimação pós cadastro
+- Adicionar uma página de confirmação pós cadastro
 - Entender melhor a organização de um monorepo e realização do deploy
 - Adicionar responsividade à aplicação
 
