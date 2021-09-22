@@ -133,7 +133,7 @@ Projeto desenvolvido por Luiz Felipe, abaixo deixo meu Github com alguns projeto
 
 Github - [lufesipe](https://github.com/lufesipe)
 
-LinkedIn - [Luiz Felipe](https://www.linkedin.com/in/luiz-felipe-da-silva-pereira-1590a1142/)
+LinkedIn - [Luiz Felipe](https://www.linkedin.com/in/luiz-felipe-sp)
 
 Email - [luizfspereira@outlook.com](mailto:luizfspereira@outlook.com)
 
